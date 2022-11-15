@@ -1,0 +1,241 @@
+
+/* General */
+
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+nav{grid-area: navi;}
+.productosPrincipales{grid-area: prodPrincipales;}
+.introduccion{grid-area: intro;}
+.banner{grid-area: banner; padding: 5px; margin: auto;}
+.relatives{grid-area: relatives;}
+.redes{grid-area: redes;}
+.marca{grid-area: marca;}
+.aviso{grid-area: aviso;}
+.tituloProductos{grid-area: tituloProductos;}
+.primerProducto{grid-area: primerProducto;}
+.segundoProducto{grid-area: segundoProducto;}
+.tercerProducto{grid-area: tercerProducto;}
+.cuartoProducto{grid-area: cuartoProducto;}
+.quientoProducto{grid-area: quintoProducto;}
+.sextoProducto{grid-area: sextoProducto;}
+.dato{grid-area: dato;}
+.foto{grid-area: foto;}
+
+.stickyHeader{position: sticky; top: 0px;}
+
+.bodyDesign{
+    background-image: linear-gradient(to top, rgb(116, 208, 224),rgb(98, 145, 136));
+}
+
+.headerDesign{
+    background-color: rgb(102, 153, 125);
+    padding: 20px;
+    border: 2px solid black;
+    margin: 0px auto;
+}
+
+.relativeNavDesign{
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: rgb(110, 189, 185);
+    transition: background-color 1s;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+}
+
+.mainDesign{
+    padding: 2% 5%;
+}
+
+.footerDesign{
+    background-color: rgb(102, 153, 125);
+    padding: 30px;
+    border: 2px solid black;
+}
+
+.productosPrincipalesDesign{
+    background-color: rgb(102, 153, 125);
+    padding: 5%;
+    border: 2px solid black;
+}
+
+.prodPrincipalDesign{
+    background-color: gray;
+    padding: 5%;
+    border: 2px solid black;
+    margin: 5%;
+}
+
+.redesDesign{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 10px 20px;
+    border: 2px solid black;
+    margin: 2% 20%;
+}
+
+.redDesign{
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+}
+.gridProdPrincipales{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "tituloProductos tituloProductos tituloProductos tituloProductos"
+    "primerProducto primerProducto segundoProducto segundoProducto"
+    "tercerProducto cuartoProducto quintoProducto sextoProducto";
+    grid-template-rows: auto auto auto auto;
+}
+
+.producto{
+    padding: 5% 10%;
+    margin: 2% 4%;
+    border: 2px solid black;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+    "dato foto";
+    grid-template-rows: auto;
+}
+
+/* Vista Mobile */
+
+@media screen and (max-width: 768px){
+    .gridMobile{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: auto auto auto;
+    }
+
+    .productos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "tituloProductos tituloProductos"
+        "primerProducto segundoProducto"
+        "tercerProducto cuartoProducto"
+        "quintoProducto sextoProducto";
+        grid-template-rows: auto auto auto;
+    }
+
+}
+
+/* Vista Intermedia */
+
+@media screen and (max-width: 1023px) and (min-width: 769px){
+    
+    .gridHeader{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "banner relatives";
+        grid-template-rows: auto;
+    }
+
+    .flexNav{
+        display: flex;
+        flex-direction: column;
+        justify-self: right;
+        margin: 0% 20%;
+    }
+
+    .gridMain{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "intro prodPrincipales";
+        grid-template-rows: auto;
+    }
+    
+    .gridFooter{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "redes marca"
+        "aviso aviso";
+        grid-template-rows: auto auto;
+    }
+
+    .relativeNavDesign:hover{
+        background-color: rgb(149, 167, 172);
+    }
+
+    .overflow{
+        overflow: auto;
+        height: 50%;
+    }
+
+    .productos{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-areas: 
+        "tituloProductos tituloProductos tituloProductos"
+        "primerProducto segundoProducto tercerProducto"
+        "cuartoProducto quintoProducto sextoProducto";
+        grid-template-rows: auto auto auto;
+    }
+    
+}
+    
+/* Vista Desktop */
+
+@media screen and (min-width: 1024px){
+
+    .gridHeader{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "banner relatives";
+        grid-template-rows: auto;
+    }
+
+    .flexNav{
+        display: flex;
+        flex-direction: column;
+        justify-self: right;
+        margin: 0% 20%;
+    }
+
+    .gridMain{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "intro prodPrincipales";
+        grid-template-rows: auto;
+    }
+
+    .gridFooter{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "redes marca"
+        "aviso aviso";
+        grid-template-rows: auto auto;
+    }
+
+    .relativeNavDesign:hover{
+        background-color: rgb(149, 167, 172);
+    }
+
+    .productos{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-areas: 
+        "tituloProductos tituloProductos tituloProductos"
+        "primerProducto segundoProducto tercerProducto"
+        "cuartoProducto quintoProducto sextoProducto";
+        grid-template-rows: auto auto auto;
+    }
+
+}
