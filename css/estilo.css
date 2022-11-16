@@ -7,7 +7,7 @@ footer{grid-area: footer;}
 nav{grid-area: navi;}
 .productosPrincipales{grid-area: prodPrincipales;}
 .introduccion{grid-area: intro;}
-.banner{grid-area: banner; padding: 5px; margin: auto;}
+.banner{grid-area: banner; padding: 5px; margin: auto; transition: box-shadow 1s;}
 .relatives{grid-area: relatives;}
 .redes{grid-area: redes;}
 .marca{grid-area: marca;}
@@ -226,6 +226,10 @@ nav{grid-area: navi;}
 
     .relativeNavDesign:hover{
         background-color: rgb(149, 167, 172);
+    }
+
+    .banner:hover{
+        box-shadow: inset 100px 100px 100px 100px rgb(51, 49, 49);
     }
 
     .productos{
