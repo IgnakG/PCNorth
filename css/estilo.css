@@ -1,27 +1,6 @@
 
 /* General */
 
-header{grid-area: header;}
-main{grid-area: main;}
-footer{grid-area: footer;}
-nav{grid-area: navi;}
-.productosPrincipales{grid-area: prodPrincipales;}
-.introduccion{grid-area: intro;}
-.banner{grid-area: banner; padding: 5px; margin: auto; transition: box-shadow 1s;}
-.relatives{grid-area: relatives;}
-.redes{grid-area: redes;}
-.marca{grid-area: marca;}
-.aviso{grid-area: aviso;}
-.tituloProductos{grid-area: tituloProductos;}
-.primerProducto{grid-area: primerProducto;}
-.segundoProducto{grid-area: segundoProducto;}
-.tercerProducto{grid-area: tercerProducto;}
-.cuartoProducto{grid-area: cuartoProducto;}
-.quientoProducto{grid-area: quintoProducto;}
-.sextoProducto{grid-area: sextoProducto;}
-.dato{grid-area: dato;}
-.foto{grid-area: foto;}
-
 .stickyHeader{position: sticky; top: 0px;}
 
 .bodyDesign{
@@ -243,3 +222,25 @@ nav{grid-area: navi;}
     }
 
 }
+
+
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+nav{grid-area: navi;}
+.productosPrincipales{grid-area: prodPrincipales;}
+.introduccion{grid-area: intro;}
+.banner{grid-area: banner; padding: 5px; margin: auto; transition: box-shadow 1s;}
+.relatives{grid-area: relatives;}
+.redes{grid-area: redes;}
+.marca{grid-area: marca;}
+.aviso{grid-area: aviso;}
+.tituloProductos{grid-area: tituloProductos;}
+.primerProducto{grid-area: primerProducto;}
+.segundoProducto{grid-area: segundoProducto;}
+.tercerProducto{grid-area: tercerProducto;}
+.cuartoProducto{grid-area: cuartoProducto;}
+.quientoProducto{grid-area: quintoProducto;}
+.sextoProducto{grid-area: sextoProducto;}
+.dato{grid-area: dato;}
+.foto{grid-area: foto;}
