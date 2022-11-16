@@ -47,29 +47,10 @@
     margin: 5%;
 }
 
-.redesDesign{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: gray;
-    padding: 10px 20px;
-    border: 2px solid black;
-    margin: 2% 20%;
-}
-
 .redDesign{
     background-color: white;
     padding: 10px;
     border: 2px solid black;
-}
-.gridProdPrincipales{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-areas: 
-    "tituloProductos tituloProductos tituloProductos tituloProductos"
-    "primerProducto primerProducto segundoProducto segundoProducto"
-    "tercerProducto cuartoProducto quintoProducto sextoProducto";
-    grid-template-rows: auto auto auto auto;
 }
 
 .producto{
@@ -97,6 +78,26 @@
         grid-template-rows: auto auto auto;
     }
 
+    .positionNav{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "primerLink segundoLink"
+        "tercerLink cuartoLink";
+    }
+
+    .gridProdPrincipales{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "tituloProductos tituloProductos"
+        "primerProducto segundoProducto"
+        "tercerProducto cuartoProducto"
+        "quintoProducto sextoProducto";
+        grid-template-rows: auto auto auto auto;
+    }
+
     .productos{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -106,6 +107,24 @@
         "tercerProducto cuartoProducto"
         "quintoProducto sextoProducto";
         grid-template-rows: auto auto auto;
+    }
+
+    .redesDesign{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: gray;
+        padding: 10px 20px;
+        border: 2px solid black;
+        margin: 2% 20%;
+    }
+
+    .relativeNavDesign:hover{
+        background-color: rgb(149, 167, 172);
+    }
+
+    .banner:hover{
+        box-shadow: inset 100px 100px 100px 100px rgb(51, 49, 49);
     }
 
 }
@@ -122,11 +141,13 @@
         grid-template-rows: auto;
     }
 
-    .flexNav{
-        display: flex;
-        flex-direction: column;
-        justify-self: right;
-        margin: 0% 20%;
+    .positionNav{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "primerLink segundoLink"
+        "tercerLink cuartoLink";
     }
 
     .gridMain{
@@ -135,6 +156,17 @@
         grid-template-areas:
         "intro prodPrincipales";
         grid-template-rows: auto;
+    }
+
+    
+    .gridProdPrincipales{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: 
+        "tituloProductos tituloProductos tituloProductos tituloProductos"
+        "primerProducto primerProducto segundoProducto segundoProducto"
+        "tercerProducto cuartoProducto quintoProducto sextoProducto";
+        grid-template-rows: auto auto auto;
     }
     
     .gridFooter{
@@ -165,6 +197,16 @@
         grid-template-rows: auto auto auto;
     }
     
+    .redesDesign{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: gray;
+        padding: 10px 20px;
+        border: 2px solid black;
+        margin: 2% 20%;
+    }
+    
 }
     
 /* Vista Desktop */
@@ -179,11 +221,13 @@
         grid-template-rows: auto;
     }
 
-    .flexNav{
-        display: flex;
-        flex-direction: column;
-        justify-self: right;
-        margin: 0% 20%;
+    .positionNav{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "primerLink segundoLink"
+        "tercerLink cuartoLink";
     }
 
     .gridMain{
@@ -192,6 +236,16 @@
         grid-template-areas:
         "intro prodPrincipales";
         grid-template-rows: auto;
+    }
+
+    .gridProdPrincipales{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: 
+        "tituloProductos tituloProductos tituloProductos tituloProductos"
+        "primerProducto primerProducto segundoProducto segundoProducto"
+        "tercerProducto cuartoProducto quintoProducto sextoProducto";
+        grid-template-rows: auto auto auto;
     }
 
     .gridFooter{
@@ -220,9 +274,18 @@
         "cuartoProducto quintoProducto sextoProducto";
         grid-template-rows: auto auto auto;
     }
+    
+    .redesDesign{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: gray;
+        padding: 10px 20px;
+        border: 2px solid black;
+        margin: 2% 20%;
+    }
 
 }
-
 
 header{grid-area: header;}
 main{grid-area: main;}
@@ -235,6 +298,10 @@ nav{grid-area: navi;}
 .redes{grid-area: redes;}
 .marca{grid-area: marca;}
 .aviso{grid-area: aviso;}
+.primerLink{grid-area: primerLink;}
+.segundoLink{grid-area: segundoLink;}
+.tercerLink{grid-area: tercerLink;}
+.cuartoLink{grid-area: cuartoLink;}
 .tituloProductos{grid-area: tituloProductos;}
 .primerProducto{grid-area: primerProducto;}
 .segundoProducto{grid-area: segundoProducto;}
