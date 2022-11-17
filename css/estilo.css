@@ -4,11 +4,11 @@
 .stickyHeader{position: sticky; top: 0px;}
 
 .bodyDesign{
-    background-image: linear-gradient(to top, rgb(116, 208, 224),rgb(98, 145, 136));
+    background-image: linear-gradient(to left, rgb(180, 185, 147),rgb(196, 199, 170), rgb(180, 185, 147));
 }
 
 .headerDesign{
-    background-color: rgb(102, 153, 125);
+    background-image: linear-gradient(to left, rgb(86, 109, 82),rgb(196, 243, 194));
     padding: 20px;
     border: 2px solid black;
     margin: 0px auto;
@@ -17,11 +17,12 @@
 .relativeNavDesign{
     padding: 5px 10px;
     margin: 5px;
-    background-color: rgb(110, 189, 185);
+    background-color: rgb(118, 146, 118);
     transition: background-color 1s;
     text-decoration: none;
     color: black;
     border: 2px solid black;
+
 }
 
 .mainDesign{
@@ -29,13 +30,13 @@
 }
 
 .footerDesign{
-    background-color: rgb(102, 153, 125);
+    background-image: linear-gradient(to left, rgb(86, 109, 82),rgb(196, 243, 194));
     padding: 30px;
     border: 2px solid black;
 }
 
 .productosPrincipalesDesign{
-    background-color: rgb(102, 153, 125);
+    background-image: linear-gradient(to top, rgb(86, 109, 82),rgb(196, 243, 194));
     padding: 5%;
     border: 2px solid black;
 }
