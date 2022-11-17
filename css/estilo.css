@@ -8,7 +8,7 @@
 }
 
 .headerDesign{
-    background-image: linear-gradient(to left, rgb(86, 109, 82),rgb(196, 243, 194));
+    background-image: linear-gradient(to left, rgb(86, 109, 82),rgb(196, 243, 194), rgb(86, 109, 82));
     padding: 20px;
     border: 2px solid black;
     margin: 0px auto;
@@ -30,7 +30,7 @@
 }
 
 .footerDesign{
-    background-image: linear-gradient(to left, rgb(86, 109, 82),rgb(196, 243, 194));
+    background-image: linear-gradient(to left, rgb(86, 109, 82),rgb(196, 243, 194), rgb(86, 109, 82));
     padding: 30px;
     border: 2px solid black;
 }
